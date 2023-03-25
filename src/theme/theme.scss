@@ -1,0 +1,21 @@
+:root {
+  --bg-mode: #ffffff;
+  --text-color: #000000;
+  --bg-nav: #ffffff;
+}
+
+.dark {
+  --bg-mode: #000000;
+  --text-color: #ffffff;
+  .navbarC {
+    --bg-nav: #000;
+  }
+}
+
+.light {
+  --bg-mode: #dff9fb;
+  --text-color: #000000;
+  .navbarC {
+    --bg-nav: BLUE;
+  }
+}

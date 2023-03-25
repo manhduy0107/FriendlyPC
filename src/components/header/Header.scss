@@ -1,0 +1,54 @@
+.navbar {
+  // background-color: #0c2461;
+  .container {
+    #responsive-navbar-nav {
+      justify-content: space-between;
+      .items-left {
+        Form {
+          text-align: center;
+          margin: auto;
+          .form-check.form-switch {
+            .form-switch.form-check-input {
+              filter: grayscale(100%);
+            }
+            // label.form-check-label {
+            //   color: white;
+            // }
+            .form-switch.form-check-input:focus {
+              filter: grayscale(100%);
+            }
+          }
+        }
+      }
+      .items-right {
+        a#collasible-nav-dropdown {
+          // color: #fff;
+        }
+      }
+    }
+  }
+  button#button-addon2\ {
+    color: white;
+    border: 1px solid white;
+  }
+  .btn-cart {
+    height: 39px;
+    .cart-icon {
+      font-size: 30px;
+      position: relative;
+      .cart-num {
+        position: absolute;
+        top: -5px;
+        left: 14px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        border: 1px solid;
+        border-radius: 17px;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+      }
+    }
+  }
+}

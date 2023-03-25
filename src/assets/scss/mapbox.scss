@@ -1,0 +1,237 @@
+/* ========================= */
+/* map search branch */
+.father__map {
+  margin-top: 150px;
+}
+
+.map_search {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#map {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+}
+
+.list_branch {
+  position: absolute;
+  width: 450px;
+  height: 400px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 2rem;
+  z-index: 10;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: #ADCBEE;
+  transition: ease 2s;
+  /* box-shadow: 0 0 10px rgb(0 0 0 / 30%); */
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  top: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FBD1D1;
+  border-radius: 10px;
+}
+
+.card__heading-font {
+  margin-top: 30px;
+}
+
+.branch__heading-font {
+  font-size: 2.5rem;
+  color: #cc8023ce;
+  text-align: center;
+}
+
+.leaderboard {
+  background-color: #E4EEFE;
+  border-radius: 0 0 12px 12px;
+  padding: 15px 15px 20px;
+  display: grid;
+  row-gap: 8px;
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.4);
+}
+
+.leaderboard__branch {
+  display: flex;
+  align-items: center;
+  padding: 10px 30px 10px 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23);
+  cursor: pointer;
+  transition: transform 0.25s cubic-bezier(0.7, 0.98, 0.86, 0.98), box-shadow 0.25s cubic-bezier(0.7, 0.98, 0.86, 0.98);
+  background-color: #fff;
+  margin: 5px;
+}
+
+.leaderboard__branch:hover {
+  transform: scale(1.05);
+  box-shadow: 0 9px 47px 11px rgba(51, 51, 51, 0.18);
+}
+
+.leaderboard__branch-name {
+  color: #f79520;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.btn__close-listBranch {
+  color: #FFDAF9;
+  font-size: 3rem;
+  position: absolute;
+  left: 0.5rem;
+  cursor: pointer;
+  left: calc(50% - 13px);
+  top: 5px;
+}
+
+.open__list_branch,
+.btn__open-listBranch {
+  display: none;
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.5rem;
+  color: #ADCBEE;
+  /* color: #66d677; */
+  background: #FFDAF9;
+  border-radius: 50%;
+  z-index: 25;
+  cursor: pointer;
+}
+
+
+/* detail location */
+.father-contact {
+  display: flex;
+  justify-content: space-evenly;
+  .MapboxFriendlyPC {
+    display: flex;
+    width: 70%;
+    .mapOffice {
+      width: 100%;
+      min-height: 650px;
+    }
+    .point_Detail {
+      width: 100%;
+    }
+
+    .button-find-way {
+      display: block;
+      width: 20%;
+      height: 15%;
+      margin-left: 45px;
+    }
+  }
+
+  .branch__Info-detail {
+    width: 100%;
+
+    .leaderboard__branch {
+      margin: 10px 0;
+    }
+  }
+
+}
+
+.branch {
+  margin-right: 45px;
+}
+
+.branch__detail {
+  margin-left: 35px;
+  width: 100%;
+  box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+  background-color: #FFF;
+  border-radius: 30px;
+  /* padding: 2em; */
+  border: 1px solid #ebebeb;
+  /* when close */
+  transform: translate(0);
+  transition: opacity 1s linear;
+  opacity: 1;
+}
+
+.branch__img {
+  padding-top: 50%;
+  /* margin: -2em -2em 0 -2em; */
+  width: 100%;
+  background: url(https://i.imgur.com/SBuNpAm.jpg) center/ cover no-repeat;
+}
+
+/* .branch__img img {
+      display: block;
+      margin: 0;
+      line-height: 0;
+      max-width: 100%;
+  } */
+
+.branch__detail-content {
+  padding: 2em;
+}
+
+.info-location-NameBranch {
+  overflow: hidden;
+  display: block;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  word-wrap: break-word;
+  white-space: normal;
+  text-overflow: ellipsis;
+  color: #f79520;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.branch__info-location {}
+
+.info-location-headingFont {
+  font-family: 'Inter';
+  font-size: 1.8rem;
+  line-height: 1.8;
+  font-weight: 700;
+  color: #175c62;
+  font-weight: 700;
+}
+
+.info-location-paragFont {
+  font-family: 'Inter';
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 700;
+  color: #cc8023ce;
+}
+
+.info__underline {
+  border-bottom: 1px solid #ccc;
+}
+
+/* button close open detail */
+.btn__close-DetailBranch {
+  top: 0;
+  right: 0px;
+  background: #FFDAF9;
+  color: #ADCBEE;
+  border-radius: 50%;
+  font-size: 3rem;
+  position: absolute;
+  cursor: pointer;
+  /* left: calc(50% - 13px); */
+}

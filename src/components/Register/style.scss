@@ -1,0 +1,62 @@
+.container-register-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    .register-name {
+        color: #607d8b;
+        font-weight: 500;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        border-bottom: 4px solid #e42a40;
+        display: inline-block;
+        letter-spacing: 1px;
+    }
+
+    .red {
+        color: red;
+    }
+
+    form {
+        width: 30%;
+        .row {
+            margin: 0;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+
+            label {
+                font-weight: bold;
+            }
+
+            input {
+                width: 100%;
+                height: 25px;
+                padding-left: 8px;
+                border-radius: 4px;
+                border: 1px solid rgb(161, 159, 159);
+            }
+
+        }
+
+        .input-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            button {
+                width: 100%;
+                height: 30px;
+                background: linear-gradient(to right, #f03f1c, #f9c158, #f03f1c, #f9c158);
+                color: #fff;
+                outline: none;
+                border: none;
+                font-weight: 500;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+        }
+    }
+}
